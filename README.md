@@ -4,14 +4,12 @@ Sam Greydanus. October 2017. MIT License.
 
 Oregon State University College of Engineering. [Explainable AI Project](http://twitter.com/DARPA/status/872547502616182785). Supported by DARPA.
 
-_Written in PyTorch_
-
 Strong agents
 --------
 
-![breakout-tunneling.gif](static/breakout-tunneling.gif)
-![pong-killshot.gif](static/pong-killshot.gif)
-![spaceinv-aiming.gif](static/spaceinv-aiming.gif)
+![breakout-tunneling.gif](static/breakout_tunneling.gif)
+![pong-killshot.gif](static/pong_killshot.gif)
+![spaceinv-aiming.gif](static/spaceinv_aiming.gif)
 
 Overfit agents
 --------
