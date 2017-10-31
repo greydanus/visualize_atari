@@ -24,7 +24,7 @@ Overfit agents
 
 Learning
 --------
-![breakout-tunneling.gif](static/breakout-learning-2000.gif)
+![breakout-learning](static/breakout-learning.png)
 
 About
 --------
@@ -36,7 +36,7 @@ To do a quick comparison of Jacobian vs. Ours, check out [this Jupyter notebook]
 
 Pretrained models
 --------
-Trained models were obtained using [this repo](https://github.com/greydanus/baby-a3c) (default hyperparameters).
+We provide pretrained models for obtaining results like those in the **Strong agents** and **Overfit agents** sections of the paper. These models were obtained using [this repo](https://github.com/greydanus/baby-a3c) (default hyperparameters).
  1. Download from [https://goo.gl/fqwJDB](https://goo.gl/fqwJDB)
  2. Unzip the file in this directory
 
