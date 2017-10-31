@@ -1,0 +1,26 @@
+##### FILE TYPES #####
+
+*.tar
+*.pt
+*.DS_Store
+*.pyc
+*.mp4
+*.zip
+
+##### DIRECTORIES #####
+
+./pong-v0
+./breakout-v0
+./spaceinvaders-v0
+
+./overfit-pong-v0
+./overfit-breakout-v0
+./overfit-spaceinvaders-v0
+
+__pycache__
+.ipynb_checkpoints/*
+
+
+##### NAMES #####
+
+*ubyte
