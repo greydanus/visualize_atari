@@ -1,8 +1,6 @@
 Visualizing and Understanding Atari Agents
 =======
-Sam Greydanus. October 2017. MIT License.
-
-Oregon State University College of Engineering. [Explainable AI Project](http://twitter.com/DARPA/status/872547502616182785). Supported by DARPA.
+Sam Greydanus. October 2017. MIT License. [Explainable AI Project](http://twitter.com/DARPA/status/872547502616182785). Supported by DARPA.
 
 Strong agents
 --------
