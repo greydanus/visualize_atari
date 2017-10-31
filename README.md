@@ -1,5 +1,7 @@
 Visualizing and Understanding Atari Agents
 =======
+[Link to paper](https://goo.gl/FQMeYN)
+
 Sam Greydanus. October 2017. MIT License. [Explainable AI Project](http://twitter.com/DARPA/status/872547502616182785). Supported by DARPA.
 
 Strong agents
@@ -22,6 +24,7 @@ Overfit agents
 Learning
 --------
 ![breakout-learning](static/breakout-learning.png)
+The Breakout agent learns a tunneling stategy (each frame is separated by ~1e7 frames of training).
 
 About
 --------
