@@ -6,10 +6,11 @@ Oregon State University College of Engineering. [Explainable AI Project](http://
 
 Strong agents
 --------
-
 ![breakout-tunneling.gif](static/breakout_tunneling.gif)
 ![pong-killshot.gif](static/pong_killshot.gif)
 ![spaceinv-aiming.gif](static/spaceinv_aiming.gif)
+
+The Breakout agent executes a tunneling strategy. The Pong agent makes a kill shot. The SpaceInvaders agent displays an aiming strategy. (All agents are LSTM-CNN trained via A3C; Blue=actor, Red=critic)
 
 Overfit agents
 --------
