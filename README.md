@@ -1,6 +1,6 @@
 Visualizing and Understanding Atari Agents
 =======
-[Link to paper](https://goo.gl/AMAoSc)
+[Link to paper](https://goo.gl/FQMeYN)
 
 Sam Greydanus. October 2017. MIT License. [Explainable AI Project](http://twitter.com/DARPA/status/872547502616182785). Supported by DARPA.
 
