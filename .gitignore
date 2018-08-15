@@ -4,7 +4,6 @@
 *.pt
 *.DS_Store
 *.pyc
-*.mp4
 *.zip
 
 ##### DIRECTORIES #####
