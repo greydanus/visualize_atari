@@ -41,7 +41,7 @@ def score_frame(model, history, ix, r, d, interp_func, mode='actor'):
     #    if d==2 then every other, which is 25% of total pixels for a 2D image)
     assert mode in ['actor', 'critic'], 'mode must be either "actor" or "critic"'
     L = run_through_model(model, history, ix, interp_func, mask=None, mode=mode)
-    scores = np.zeros((int(80/d)+1,int(80/d)+1)) # saliency scores S(t,i,j)
+    scores = np.zeros((int(79/d)+1,int(79/d)+1)) # saliency scores S(t,i,j)
     for i in range(0,80,d):
         for j in range(0,80,d):
             mask = get_mask(center=[i,j], size=[80,80], r=r)
