@@ -11,12 +11,10 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 
 import numpy as np
-
-# from scipy.misc import imresize # preserves single-pixel info _unlike_ img = img[::2,::2]
 import cv2
 
 prepro = (
-    lambda img: cv2.imresize(src=img[35:195].mean(2), dsize=(80, 80))
+    lambda img: cv2.resize(src=img[35:195].mean(2), dsize=(80, 80))
     .astype(np.float32)
     .reshape(1, 80, 80)
     / 255.0

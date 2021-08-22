@@ -11,12 +11,10 @@ import torch.nn.functional as F
 
 import numpy as np
 from scipy.ndimage.filters import gaussian_filter
-
-# from scipy.misc import imresize # preserves single-pixel info _unlike_ img = img[::2,::2]
 import cv2
 
 prepro = (
-    lambda img: cv2.imresize(src=img[35:195].mean(2), dsize=(80, 80))
+    lambda img: cv2.resize(src=img[35:195].mean(2), dsize=(80, 80))
     .astype(np.float32)
     .reshape(1, 80, 80)
     / 255.0
@@ -72,10 +70,10 @@ def score_frame(model, history, ix, r, d, interp_func, mode="actor"):
         for j in range(0, 80, d):
             mask = get_mask(center=[i, j], size=[80, 80], r=r)
             l = run_through_model(model, history, ix, interp_func, mask=mask, mode=mode)
-            scores[int(i / d), int(j / d)] = (L - l).pow(2).sum().mul_(0.5).data[0]
+            scores[int(i / d), int(j / d)] = (L - l).pow(2).sum().mul_(0.5).item()
     pmax = scores.max()
-    scores = cv2.imresize(
-        src=scores, dsize=[80, 80], interpolation=cv2.INTER_LINEAR
+    scores = cv2.resize(
+        src=scores, dsize=(80, 80), interpolation=cv2.INTER_LINEAR
     ).astype(np.float32)
     return pmax * scores / scores.max()
 
@@ -84,8 +82,8 @@ def saliency_on_atari_frame(saliency, atari, fudge_factor, channel=2, sigma=0):
     # sometimes saliency maps are a bit clearer if you blur them
     # slightly...sigma adjusts the radius of that blur
     pmax = saliency.max()
-    S = cv2.imresize(
-        src=saliency, dsize=[160, 160], interpolation=cv2.INTER_LINEAR
+    S = cv2.resize(
+        src=saliency, dsize=(160, 160), interpolation=cv2.INTER_LINEAR
     ).astype(np.float32)
     S = S if sigma == 0 else gaussian_filter(S, sigma=sigma)
     S -= S.min()

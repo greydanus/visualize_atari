@@ -13,8 +13,6 @@ import torch.nn as nn
 import glob
 import numpy as np
 
-import cv2
-
 
 class NNPolicy(torch.nn.Module):  # an actor-critic neural network
     def __init__(self, channels, num_actions):

@@ -17,7 +17,7 @@ sys.path.append("..")
 from visualize_atari import *
 
 prepro = (
-    lambda img: cv2.imresize(src=img[35:195].mean(2), dsize=(80, 80))
+    lambda img: cv2.resize(src=img[35:195].mean(2), dsize=(80, 80))
     .astype(np.float32)
     .reshape(1, 80, 80)
     / 255.0
