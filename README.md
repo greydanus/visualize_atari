@@ -35,7 +35,7 @@ A quick comparison of our method to Jacobian-based saliency: [Jupyter notebook](
 Pretrained models
 --------
 We provide pretrained models for obtaining results like those in the "Strong agents" and "Overfit agents" sections of the paper. These models were obtained using [this repo](https://github.com/greydanus/baby-a3c) (default hyperparameters).
- 1. Download from [https://goo.gl/fqwJDB](https://goo.gl/fqwJDB)
+ 1. Download from [this link](https://drive.google.com/file/d/0B-HNE76mR97FaHYtX202WFZSRXc/view?usp=sharing&resourcekey=0-s6LupX_4yCM56WgLQeFZFg)
  2. Unzip the file in this directory
 
 Dependencies
